@@ -75,14 +75,14 @@ module.exports = {
       filename: devMode ? "[name].css" : "[name].[hash].css",
       chunkFilename: devMode ? "[id].css" : "[id].[hash].css",
     }),
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: path.resolve(__dirname, "src/assets/images/faviconName.png"),
-          to: path.resolve(__dirname, "dist"),
-        },
-      ],
-    }),
+    // new CopyWebpackPlugin({
+    //   patterns: [
+    //     {
+    //       from: path.resolve(__dirname, "src/assets/images/faviconName.png"),
+    //       to: path.resolve(__dirname, "dist"),
+    //     },
+    //   ],
+    // }),
   ],
   module: {
     rules: [
